@@ -356,6 +356,12 @@ a:visited {
   }
 }
 
+@media  screen and  (min-width: 400px )
+{
+
+} 
+  
+
 /*--------------------------------------------------------------
   # Hero Section
   --------------------------------------------------------------*/
@@ -556,13 +562,25 @@ $size-height: 500px;
 
 @media (max-height: 500px) {
   #hero {
-    height: auto;
+    height: 100px;
   }
   #hero .container {
     padding-top: 130px;
     padding-bottom: 60px;
+  
+}
+}
+
+@media (min-height: 500px) {
+ 
+
+  #hero .btns a
+  {
+margin-bottom: 30px;
   }
 }
+
+
 
 @media (max-width: 768px) {
   #hero h1 {
