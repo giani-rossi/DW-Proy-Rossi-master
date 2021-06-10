@@ -87,34 +87,6 @@ a:visited {
   color: inherit;
 }
 
-/* ====== TOP BAR ====== */
-
-.topBar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 10px;
-  font-style: italic;
-  background-color: #f3f0ed;
-  color: #fff;
-}
-
-.topBar div span {
-  margin: 10px;
-  font-size: 13px;
-  font-style: italic;
-}
-
-#listBar {
-  display: flex;
-  padding: 10px;
-  margin: 10px;
-}
-
-#listBar li {
-  margin: 10px;
-}
-
 /* ====== HEADER ====== */
 
 .header {
@@ -131,63 +103,63 @@ a:visited {
   /*z-index: 997;*/
   padding: 15px 0;
   top: 40px;
-}
 
-#header .logo {
-  font-size: 22px;
-  margin: 0;
-  padding: 0;
-  line-height: 1.1;
-  font-weight: 300;
-  letter-spacing: 1px;
-  font-style: italic;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "$font-family", sans-serif;
-  color: #ddc285;
-  display: flex;
-  justify-content: start;
-  text-decoration: none;
-}
+  .logo {
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "$font-family", sans-serif;
+    color: #ddc285;
+    display: flex;
+    justify-content: start;
+    text-decoration: none;
 
-#header .logo img  /* CHEQUEAR TEMA IMAGEN DEL LOGO */ {
-  max-height: 40px;
+    img                     /* CHEQUEAR TEMA IMAGEN DEL LOGO */ {
+      max-height: 40px;
+    }
+  }
 }
 
 /* Desktop Navigation */
 
 .navbar {
   padding: 0;
-}
 
-.navbar ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: flex-end;
-  list-style: none;
-  align-items: center;
-}
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
 
-.navbar li {
-  position: relative;
-}
+    li {
+      position: relative;
 
-.navbar a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 0 10px 30px;
-  color: #ddc285;
-  white-space: nowrap;
-  transition: 0.4s;
-  font-size: 14px;
-}
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0 10px 30px;
+        color: #ddc285;
+        white-space: nowrap;
+        transition: 0.4s;
+        font-size: 14px;
 
-.navbar a:hover,
-.navbar .active,
-.navbar li:hover > a {
-  color: #947533;
+        a:hover,
+        .active,
+        li:hover > a {
+          color: #947533;
+        }
+      }
+    }
+  }
 }
 
 .navbar .dropdown ul {
@@ -204,19 +176,19 @@ a:visited {
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 4px;
-}
 
-.navbar .dropdown ul li {
-  min-width: 100px;
-}
+  li {
+    min-width: 100px;
 
-.navbar .dropdown ul a {
-  padding: 10px 20px;
-  color: #ddc285;
-}
+    a {
+      padding: 10px 20px;
+      color: #ddc285;
 
-.navbar .dropdown ul a i {
-  font-size: 12px;
+      a i {
+        font-size: 12px;
+      }
+    }
+  }
 }
 
 .navbar .dropdown ul a:hover,
@@ -232,13 +204,8 @@ a:visited {
   visibility: visible;
 }
 
+/*** Mobile Navigation */
 
-
-
-
-/**
-* Mobile Navigation 
-*/
 .mobile-nav-toggle {
   color: red;
   font-size: 28px;
@@ -267,40 +234,42 @@ a:visited {
   background: rgba(0, 0, 0, 0.9);
   transition: 0.3s;
   z-index: 999;
-}
 
-.navbar-mobile .mobile-nav-toggle {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-}
+  .mobile-nav-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
 
-.navbar-mobile ul {
-  display: block;
-  position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
-  padding: 10px 0;
-  border-radius: 6px;
-  background-color: #fff;
-  overflow-y: auto;
-  transition: 0.3s;
-}
+    ul {
+      display: block;
+      position: absolute;
+      top: 55px;
+      right: 15px;
+      bottom: 15px;
+      left: 15px;
+      padding: 10px 0;
+      border-radius: 6px;
+      background-color: #fff;
+      overflow-y: auto;
+      transition: 0.3s;
 
-.navbar-mobile a {
-  padding: 10px 20px;
-  font-size: 15px;
-  color: #1a1814;
-}
+      a {
+        padding: 10px 20px;
+        font-size: 15px;
+        color: #1a1814;
 
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #cda45e;
-}
+        a:hover,
+        .active,
+        li:hover > a {
+          color: #cda45e;
 
-.navbar-mobile .getstarted {
-  margin: 15px;
+          .getstarted {
+            margin: 15px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .navbar-mobile .dropdown ul {
@@ -313,42 +282,35 @@ a:visited {
   visibility: visible;
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-}
 
-.navbar-mobile .dropdown ul li {
-  min-width: 200px;
-}
+  li {
+    min-width: 200px;
 
-.navbar-mobile .dropdown ul a {
-  padding: 10px 20px;
-}
+    a {
+      padding: 10px 20px;
 
-.navbar-mobile .dropdown ul a i {
-  font-size: 12px;
-}
+      a i {
+        font-size: 12px;
 
-.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #cda45e;
+        a:hover,
+        .active:hover,
+        li:hover > a {
+          color: #cda45e;
+        }
+      }
+    }
+  }
 }
-
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
 
-
-
-
-
-
-
-
-
 .button {
   @include boton;
-}
 
-.button :hover {
-  background-color: #947533;
+  :hover {
+    background-color: #947533;
+  }
 }
 
 @media (max-width: 992px) {
@@ -367,19 +329,6 @@ a:visited {
     text-align: center;
   }
 }
-
-/*
-@media (max-width: 768px) {
-  /* MEDIA QUERY PARA TABLET 
-  .mobile-nav-toggle {
-    display: block;
-  }
-  .navbar ul {
-    display: flex;
-    flex-direction: column;
-  } 
-  */
-
 
 #hero {
   width: 100%;
@@ -406,31 +355,23 @@ a:visited {
 }
 
 @media (max-width: 500px) {
-  
   #hero h2 {
     color: #fff;
     background-color: #cda45e;
     margin: 20px 0 10px 0;
     font-size: 22px;
   }
-  
+
   .body {
     width: 100%;
   }
 }
 
-
 @media (max-width: 992px) {
   #hero .container {
     padding-top: 0px;
   }
-  
 }
-
-
-
-
-
 
 #hero h1 {
   margin: 0;
@@ -439,11 +380,11 @@ a:visited {
   line-height: 56px;
   color: #fff;
   font-family: "$font-family", sans-serif;
-}
 
-#hero h1 span {
-  color: #ddc285;
-  font-style: italic;
+  span {
+    color: #ddc285;
+    font-style: italic;
+  }
 }
 
 #hero h2 {
@@ -494,8 +435,6 @@ a:visited {
   #hero .btns a {
     margin-bottom: 20px;
   }
-
-  
 }
 
 @media (max-width: 768px) {
@@ -551,31 +490,6 @@ a:visited {
   }
 }
 
-.breadcrumbs h2 {
-  font-size: 26px;
-  font-weight: 300;
-}
-
-.breadcrumbs ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 14px;
-}
-
-.breadcrumbs ol li + li {
-  padding-left: 10px;
-}
-
-.breadcrumbs ol li + li::before {
-  display: inline-block;
-  padding-right: 10px;
-  color: #37332a;
-  content: "/";
-}
-
 @media (max-width: 768px) {
   .breadcrumbs .d-flex {
     display: block !important;
@@ -596,21 +510,21 @@ a:visited {
   background-size: cover;
   position: relative;
   padding: 80px 0;
-}
 
-.nosotros:before {
-  content: "";
+  :before {
+    content: "";
 
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
 
-.nosotros .nosotros-img {
-  position: relative;
-  transition: 0.5s;
+    .nosotros-img {
+      position: relative;
+      transition: 0.5s;
+    }
+  }
 }
 
 .nosotros .nosotros-img img {
@@ -685,7 +599,7 @@ a:visited {
   --------------------------------------------------------------*/
 
 .departamentos .box {
-  padding: 50px 30px;
+  padding: 50px 50px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.3s;
   background: $bloquesunidades;
@@ -700,6 +614,7 @@ a:visited {
 
 .departamentos .box h4 {
   font-size: 24px;
+
   font-weight: 600;
   padding: 0;
   margin: 20px 0;
@@ -712,10 +627,17 @@ a:visited {
   margin: 0;
   padding: 0;
 }
+.departamentos .box a {
+  color: #aaaaaa;
+  font-size: 15px;
+  font-style: italic;
+
+  padding: 0;
+}
 
 .departamentos .box:hover {
   background: #947533;
-  padding: 30px 30px 70px 30px;
+  padding: 50px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 
@@ -904,7 +826,8 @@ a:visited {
   margin: 10px;
   padding: 5px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: #fff;
+  color: #aaaaaa;
+  font-size: 20px;
 }
 
 .main-nav__link {

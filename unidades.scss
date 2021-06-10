@@ -1,0 +1,131 @@
+$bloquesunidades: #d9c1a1;
+$grisoscuro: #fff;
+
+$font-family: "Share Tech Mono", monospace;
+
+@mixin boton {
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #947533;
+  background-color: #d9c1a1;
+  border: 2px solid #d9c1a1;
+  text-decoration: none;
+  margin-left: 15px;
+}
+@mixin titulosGrises {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 3rem 0rem 0.5rem 0rem;
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "$font-family", sans-serif;
+}
+
+@mixin titulosGrises_ {
+  font-size: 15px;
+  font-weight: 500;
+  /*padding: 1rem 0rem 1rem 0rem;
+  margin: 0 0 0 1.5rem;*/
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "$font-family", sans-serif;
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+
+@mixin lineaGris {
+  content: "";
+  width: 50px;
+  height: 1px;
+  display: inline-block;
+  background: #947533;
+  margin: 4px 10px;
+}
+
+@mixin titulosMarrones {
+  margin: 0 0 0 1.5rem;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  color: #947533;
+}
+
+@mixin titulosMarrones_ {
+  /*margin: 0 0 0 1.5rem;*/
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  color: #947533;
+  margin-left: 70px;
+}
+
+
+.departamentos .box {
+    padding: 50px 50px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.3s;
+    background: $bloquesunidades;
+  }
+  
+  .departamentos .box span {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #947533;
+  }
+  
+  .departamentos .box h4 {
+    font-size: 24px;
+  
+    font-weight: 600;
+    padding: 0;
+    margin: 20px 0;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .departamentos .box p {
+    color: #aaaaaa;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  .departamentos .box a {
+    color: #aaaaaa;
+    font-size: 15px;
+    font-style: italic;
+  
+    padding: 0;
+  }
+  
+  .departamentos .box:hover {
+    background: #947533;
+    padding: 50px;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+  }
+  
+  .departamentos .box:hover span,
+  .departamentos .box:hover h4,
+  .departamentos .box:hover p {
+    color: #fff1d3;
+  }
+  
+  .section-title h4 {
+    @include titulosGrises;
+  }
+  
+  .section-title h4::after {
+    @include lineaGris;
+  }
+  
+  .section-title p {
+    @include titulosMarrones; }
