@@ -71,7 +71,7 @@ $font-family: "Share Tech Mono", monospace;
 
 
 .departamentos .box {
-    padding: 50px 50px;
+    padding: 70px 70px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     transition: all ease-in-out 0.3s;
     background: $bloquesunidades;
@@ -89,7 +89,7 @@ $font-family: "Share Tech Mono", monospace;
   
     font-weight: 600;
     padding: 0;
-    margin: 20px 0;
+    margin: 20px;
     color: rgba(255, 255, 255, 0.8);
   }
   
@@ -109,7 +109,7 @@ $font-family: "Share Tech Mono", monospace;
   
   .departamentos .box:hover {
     background: #947533;
-    padding: 50px;
+    
     box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
   }
   
@@ -128,4 +128,5 @@ $font-family: "Share Tech Mono", monospace;
   }
   
   .section-title p {
-    @include titulosMarrones; }
+    @include titulosMarrones;
+  }
