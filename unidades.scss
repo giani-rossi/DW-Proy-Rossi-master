@@ -80,11 +80,12 @@ body {
   height: 100%;
 }
 
-.departamentos .box {
-  padding: 70px 70px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  transition: all ease-in-out 0.3s;
-  background-image: url(https://thelinktowers.com/img/torres.jpg);
+.departamentos {
+  .box {
+    padding: 70px 70px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.3s;
+  }
 }
 
 .departamentos .box span {
@@ -143,4 +144,9 @@ body {
 
 .section-title span {
   @include titulosGrises;
+}
+
+a {
+  @include titulosGrises_();
+  text-decoration: none;
 }

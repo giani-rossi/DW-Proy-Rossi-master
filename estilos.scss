@@ -105,7 +105,7 @@ a:visited {
   top: 40px;
 
   .logo {
-    font-size: 22px;
+    font-size: 25px;
     margin: 0;
     padding: 0;
     line-height: 1.1;
@@ -138,6 +138,7 @@ a:visited {
     justify-content: flex-end;
     list-style: none;
     align-items: center;
+    font-size: 20px;
 
     li {
       position: relative;
@@ -150,7 +151,7 @@ a:visited {
         color: #ddc285;
         white-space: nowrap;
         transition: 0.4s;
-        font-size: 14px;
+        font-size: 15px;
 
         a:hover,
         .active,
@@ -207,7 +208,6 @@ a:visited {
 /*** Mobile Navigation */
 
 .mobile-nav-toggle {
-  color: red;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -375,9 +375,9 @@ a:visited {
 
 #hero h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: 60px;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 40px;
   color: #fff;
   font-family: "$font-family", sans-serif;
 
@@ -391,7 +391,7 @@ a:visited {
   color: #eee;
 
   margin: 20px 0 10px 0;
-  font-size: 22px;
+  font-size: 40px;
 }
 
 #hero .btns {
@@ -519,12 +519,12 @@ a:visited {
     top: 0;
     left: 0;
     right: 0;
-
-    .nosotros-img {
-      position: relative;
-      transition: 0.5s;
-    }
   }
+}
+
+.nosotros .nosotros-img {
+  position: relative;
+  transition: 0.5s;
 }
 
 .nosotros .nosotros-img img {
@@ -588,7 +588,7 @@ a:visited {
   color: #fff;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .nosotros {
     background-attachment: fixed;
   }
@@ -637,7 +637,7 @@ a:visited {
 
 .departamentos .box:hover {
   background: #947533;
-  
+
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 
@@ -692,6 +692,19 @@ a:visited {
   -webkit-box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 2px 5px -2px rgba(0, 0, 0, 0.7);
   border: 2px solid rgba(221, 194, 133, 0.2);
+}
+@media (max-width: 768px) {
+  .booking-form {
+    display: flex;
+  }
+
+  .form-header {
+    display: none;
+  }
+
+  #booking.bookNow {
+    height: 1000px;
+  }
 }
 
 .booking-form > form .row {
@@ -813,7 +826,7 @@ a:visited {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   background-color: #f3f0ed;
 }
 
@@ -832,9 +845,16 @@ a:visited {
 
 .main-nav__link {
   text-decoration: none;
-  font-style: italic;
-  margin: 10px;
+  padding: 10px;
+  margin: 0px;
+  font-size: 15px;
+  font-weight: 500;
+  /*padding: 1rem 0rem 1rem 0rem;
+  margin: 0 0 0 1.5rem;*/
+  letter-spacing: 0px;
+  text-transform: uppercase;
   color: #aaaaaa;
+  font-family: "$font-family", sans-serif;
 }
 
 .main-nav__link:hover {
@@ -871,13 +891,13 @@ a:visited {
   padding-top: 5%;
   padding-bottom: 5%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .info {
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
   width: 100%;
 }
 .informacion .info i {
@@ -888,6 +908,7 @@ a:visited {
   background: #cda45e;
   display: flex;
   justify-content: center;
+  flex-wrap: nowrap;
   align-items: center;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
