@@ -60,6 +60,45 @@ body {
   color: #fff1d3;
 }
 
+.section-title h4 {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 3rem 0rem 0.5rem 0rem;
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "$font-family", sans-serif;
+}
+
+.section-title h4::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  display: inline-block;
+  background: #947533;
+  margin: 4px 10px;
+}
+
+.section-title p {
+  margin: 0 0 0 1.5rem;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  color: #947533;
+}
+
+.section-title span {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 3rem 0rem 0.5rem 0rem;
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "$font-family", sans-serif;
+}
+
 .returnLinks {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -214,5 +253,17 @@ h4::after {
   font-style: italic;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.mapouter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 900px;
+  width: 1200px;
+  margin: 10px;
 }
 /*# sourceMappingURL=unidades.css.map */
