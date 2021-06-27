@@ -47,6 +47,7 @@ body {
   font-family: "$font-family", sans-serif;
   margin-left: 100px;
   margin-bottom: 50px;
+  font-style: italic;
 }
 
 @mixin lineaGris {
@@ -97,11 +98,11 @@ body {
 
 .departamentos .box h4 {
   font-size: 24px;
-
+  height: 28px;
   font-weight: 600;
   padding: 0;
   margin: 20px;
-  color: rgba(255, 255, 255, 0.8);
+  color: #947533;
 }
 
 .departamentos .box p {
@@ -109,6 +110,7 @@ body {
   font-size: 15px;
   margin: 0;
   padding: 0;
+  height: 120px;
 }
 .departamentos .box a {
   color: #aaaaaa;
@@ -130,23 +132,120 @@ body {
   color: #fff1d3;
 }
 
-.section-title h4 {
-  @include titulosGrises;
+.returnLinks {
+  display: flex;
+  justify-content: center;
+  @include titulosGrises_();
+  text-decoration: none;
+  margin: 10px;
 }
 
-.section-title h4::after {
+/*SECTION DE DEPARTAMENTOS - IMAGENES LOCALIZACION ETC*/
+
+/*.linkDepartamento {
+  image-rendering: url(./francesca-tosolini-tHkJAMcO3QE-unsplash.jpg) center
+    center;
+  background-size: cover;
+  position: relative;
+  padding: 80px 0;
+
+  :before {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+} */
+
+.linkDepartamento img {
+  position: relative;
+  transition: 0.5s;
+  height: 900px;
+  width: 1200px;
+  margin: 10px;
+}
+
+.linkDepartamento .linkDepartamento-img img {
+  max-width: 100%;
+  max-height: 100%;
+  /*border: 4px solid rgba(255, 255, 255, 0.2);*/
+  position: relative;
+  background-size: cover;
+}
+
+.linkDepartamento .linkDepartamento-img::before {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+  content: "";
+  border-left: 5px solid #fff;
+  border-top: 5px solid #fff;
+  transition: 0.5s;
+}
+
+.linkDepartamento .linkDepartamento-img::after {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  content: "";
+  border-right: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  transition: 0.5s;
+}
+
+.linkDepartamento .linkDepartamento-img:hover {
+  transform: scale(1.05);
+}
+
+.linkDepartamento .linkDepartamento-img:hover::before {
+  left: 10px;
+  top: 10px;
+}
+
+.linkDepartamento .linkDepartamento-img:hover::after {
+  right: 10px;
+  bottom: 10px;
+}
+
+.linkDepartamento .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #ffff;
+}
+
+.linkDepartamento .content p:last-child {
+  margin-bottom: 0;
+  margin-top: 60px;
+  font-size: 20px;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .linkDepartamento {
+    background-attachment: fixed;
+  }
+}
+
+.titularesUnidades h4 {
+  @include titulosGrises();
+  color: #947533;
+}
+
+h4::after {
   @include lineaGris;
 }
 
-.section-title p {
-  @include titulosMarrones;
-}
-
-.section-title span {
-  @include titulosGrises;
-}
-
-a {
+.titularesUnidades p {
   @include titulosGrises_();
-  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
