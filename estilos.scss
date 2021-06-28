@@ -87,6 +87,13 @@ a:visited {
   color: inherit;
 }
 
+.backToTheTop {
+  @include titulosGrises();
+  font-size: 15px;
+  text-decoration: none;
+  margin-left: 1100px;
+}
+
 /* ====== HEADER ====== */
 
 .header {
@@ -407,6 +414,13 @@ a:visited {
 #hero .btn-alquilar:hover {
   background: #ddc285;
   color: #947533;
+}
+
+.returnLinks {
+  @include titulosGrises_();
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
 }
 
 @media (min-width: 1024px) {
