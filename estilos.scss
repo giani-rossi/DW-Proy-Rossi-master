@@ -91,7 +91,9 @@ a:visited {
   @include titulosGrises();
   font-size: 15px;
   text-decoration: none;
-  margin-left: 1100px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* ====== HEADER ====== */
