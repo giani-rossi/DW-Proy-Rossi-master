@@ -37,6 +37,17 @@ a:visited {
           justify-content: flex-end;
 }
 
+@media (max-width: 900px) {
+  .backToTheTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 /* ====== HEADER ====== */
 .header {
   display: -webkit-box;
@@ -195,6 +206,14 @@ a:visited {
   }
   .navbar ul {
     display: none;
+  }
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

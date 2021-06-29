@@ -9,6 +9,14 @@ body {
   min-width: 100vh;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
 @mixin boton {
   font-weight: 600;
   font-size: 13px;
@@ -132,6 +140,95 @@ body {
   color: #fff1d3;
 }
 
+@media (max-width: 900px) {
+  .box {
+    width: 50%;
+    height: auto;
+    display: inline-block;
+    justify-content: center;
+  }
+
+  .box span {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #947533;
+  }
+
+  .departamentos .box h4 {
+    font-size: 24px;
+    height: 28px;
+    font-weight: 600;
+    padding: 0;
+    color: #947533;
+  }
+
+  .departamentos .box p {
+    display: none;
+  }
+  .departamentos .box a {
+    color: #aaaaaa;
+    font-size: 15px;
+    font-style: italic;
+
+    padding: 0;
+  }
+
+  .departamentos .box:hover {
+    background: #947533;
+
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+  }
+
+  .departamentos .box:hover span,
+  .departamentos .box:hover h4,
+  .departamentos .box:hover p {
+    color: #fff1d3;
+  }
+
+  .titularesUnidades p {
+    width: 50%;
+    display: inline-block;
+    margin-left: 0px;
+  }
+
+  .titularesUnidades .linkDepartamento img {
+    width: 50%;
+    height: auto;
+    position: relative;
+    background-size: cover;
+  }
+
+  .returnLinks {
+    display: flex;
+    justify-content: end;
+    @include titulosGrises_();
+    text-decoration: none;
+    margin: 10px;
+  }
+
+  .mapouter {
+    display: inline-block;
+    justify-content: flex-end;
+    height: 100%;
+    width: 50%;
+    margin: 10px;
+  }
+}
+
+.departamentos {
+  text-align: center;
+}
+
+@media (min-width: 901px) {
+  .titularesUnidades .linkDepartamento img {
+    width: 50%;
+    height: auto;
+    position: relative;
+    background-size: cover;
+  }
+}
+
 .section-title h4 {
   @include titulosGrises;
 }
@@ -157,24 +254,6 @@ body {
 }
 
 /*SECTION DE DEPARTAMENTOS - IMAGENES LOCALIZACION ETC*/
-
-/*.linkDepartamento {
-  image-rendering: url(./francesca-tosolini-tHkJAMcO3QE-unsplash.jpg) center
-    center;
-  background-size: cover;
-  position: relative;
-  padding: 80px 0;
-
-  :before {
-    content: "";
-
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-} */
 
 .linkDepartamento img {
   position: relative;
@@ -245,9 +324,24 @@ body {
   color: #fff;
 }
 
-@media (max-width: 1024px) {
+/*@media (max-width: 1024px) {
   .linkDepartamento {
     background-attachment: fixed;
+  }
+}*/
+
+@media (max-width: 576px) {
+  body {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .titularesUnidades .linkDepartamento img {
+    width: 30%;
+    height: auto;
+    position: relative;
+    background-size: cover;
   }
 }
 
@@ -256,20 +350,17 @@ body {
   color: #947533;
 }
 
+.titularesUnidades {
+  margin: 20px;
+}
+
 h4::after {
   @include lineaGris;
 }
 
 .titularesUnidades p {
   @include titulosGrises_();
+  margin-left: 0px;
   margin-top: 10px;
   margin-bottom: 10px;
-}
-
-.mapouter {
-  display: flex;
-  justify-content: flex-end;
-  height: 900px;
-  width: 1200px;
-  margin: 10px;
 }
