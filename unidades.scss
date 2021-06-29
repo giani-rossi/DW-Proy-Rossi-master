@@ -3,18 +3,18 @@ $grisoscuro: #fff;
 
 $font-family: "Share Tech Mono", monospace;
 
-body {
-  background-color: $bloquesunidades;
-  width: 100%;
-  min-width: 100vh;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+}
+
+body {
+  background-color: $bloquesunidades;
+  width: 100%;
+  min-width: 100vh;
 }
 
 @mixin boton {
@@ -217,6 +217,7 @@ body {
 }
 
 .departamentos {
+  width: auto;
   text-align: center;
 }
 
@@ -337,6 +338,10 @@ body {
 }
 
 @media (max-width: 576px) {
+  .departamentos {
+    width: 100%;
+  }
+
   .titularesUnidades .linkDepartamento img {
     width: 30%;
     height: auto;
